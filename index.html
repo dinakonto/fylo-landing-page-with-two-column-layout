@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./styles/css/styles.css">
 
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
@@ -27,7 +27,11 @@
     </header>
 
     <section class="hero">
-      <div class="2col">
+      <div class="col2">
+        <div class="image">
+          <img src="./assets/illustration-1.svg" alt="">
+        </div>
+
         <div class="text">
           <h1>All your files in one secure location, accessible anywhere.</h1>
           <p>
@@ -41,14 +45,15 @@
           </form>
         </div>
 
-        <div class="image">
-          <img src="./assets/illustration-1.svg" alt="">
-        </div>
       </div>
     </section>
 
     <section class="stay-productive">
-      <div class="2col">
+      <div class="col2">
+        <div class="image">
+          <img src="./assets/illustration-2.svg" alt="">
+        </div>
+
         <div class="text">
           <h1>Stay productive, wherever you are</h1>
           <p>
@@ -76,14 +81,11 @@
           </div>
         </div>
 
-        <div class="image">
-          <img src="./assets/illustration-2.svg" alt="">
-        </div>
       </div>
     </section>
 
     <section class="early-access">
-      <div class="2col">
+      <div class="col2">
         <div class="text">
           <h2>Get early access today</h2>
           <p>
@@ -96,41 +98,41 @@
           <input type="email" name="email" placeholder="email@example.com" aria-label="Email Address">
           <button type="submit" aria-label="Submit">Get Started For Free</button>
         </form>
-      </section>
       </div>
+    </section>
+
+    <footer>
+      <img src="./assets/logo.svg" alt="Fylo" class="logo">
+      <div class="4col">
+
+        <div class="contact">
+          <p class="phone">Phone: <a href="tel:+15431234567">+1-543-123-4567</a></p>
+          <p class="email"><a href="mailto:example@fylo.com">example@fylo.com</a></p>
+        </div>
+
+        <div class="sitemap">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <ul>
+            <a href="#"><li>F</li></a>
+            <a href="#"><li>T</li></a>
+            <a href="#"><li>I</li></a>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
   </div>
-
-  <footer>
-    <img src="./assets/logo.svg" alt="Fylo" class="logo">
-    <div class="4col">
-
-      <div class="contact">
-        <p class="phone">Phone: <a href="tel:+15431234567">+1-543-123-4567</a></p>
-        <p class="email"><a href="mailto:example@fylo.com">example@fylo.com</a></p>
-      </div>
-
-      <div class="sitemap">
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Privacy</a></li>
-        </ul>
-      </div>
-
-      <div class="social">
-        <ul>
-          <a href="#"><li>F</li></a>
-          <a href="#"><li>T</li></a>
-          <a href="#"><li>I</li></a>
-        </ul>
-      </div>
-
-    </div>
-  </footer>
 
 </body>
 </html>

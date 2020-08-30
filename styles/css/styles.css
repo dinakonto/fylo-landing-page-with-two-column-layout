@@ -1,0 +1,94 @@
+/* * BASIC LAYOUT FOR:
+ * * Small viewports, over 375px wide
+ * */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #070439;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1.7em;
+  margin-top: 30px;
+  margin-bottom: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+#wrapper {
+  position: relative;
+}
+
+.col2 {
+  margin: 35px;
+}
+
+header {
+  padding: 13px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+header .logo {
+  height: 25px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-size: 0.9em;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-family: "Raleway", Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+input {
+  color: #070439;
+  border: 1px solid #070439;
+  font-size: 0.9em;
+}
+
+input::placeholder {
+  color: #bfbfbf;
+}
+
+button {
+  font-family: "Raleway", Helvetica, sans-serif;
+  border: none;
+  background: #3065f8;
+  color: white;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=styles.css.map */

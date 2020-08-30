@@ -10,4 +10,74 @@ $font-stack-headings: 'Raleway', Helvetica, sans-serif
 $font-stack-body: 'Open Sans', Helvetica, sans-serif
 $font-regular: 400
 $font-bold: 700
-$font-size-base: 15px
+$font-size-base: 14px
+
+
+/*
+ * BASIC LAYOUT FOR:
+ * Small viewports, over 375px wide
+ */
+*
+  box-sizing: border-box
+body
+  margin: 0
+  font:
+    family: $font-stack-body
+    weight: $font-regular
+    size: $font-size-base
+  line-height: 1.5
+  color: $col-primary-dark
+  text-align: center
+img
+  max-width: 100%
+h1
+  font-size: 1.7em
+  margin-top: 30px
+  margin-bottom: 28px
+h1,h2,h3,h4,h5,h6
+  font-family: $font-stack-headings
+p
+  font-size: 1em
+  margin-bottom: 15px
+
+#wrapper
+  position: relative
+.col2
+  margin: 35px
+
+// HEADER
+header
+  padding: 13px 25px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 70px
+header .logo
+  height: 25px
+nav ul
+  display: flex
+  list-style-type: none
+  padding-left: 0
+nav ul li
+  margin-left: 20px
+  font-size: 0.9em
+
+// FORM
+input, button
+  width: 100%
+  padding: 12px 20px
+  border-radius: 4px
+  font-family: $font-stack-headings
+  margin-bottom: 15px
+input
+  color: $col-primary-dark
+  border: 1px solid $col-primary-dark
+  font-size: 0.9em
+input::placeholder
+  color: $col-neutral
+button
+  font-family: $font-stack-headings
+  border: none
+  background: $col-accent-buttons
+  color: white
+  font-weight: $font-bold
