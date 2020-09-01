@@ -42,6 +42,23 @@ h1,h2,h3,h4,h5,h6
 p
   font-size: 1em
   margin-bottom: 15px
+a
+  color: $col-accent-links
+  border-bottom: 1px solid $col-accent-links
+  padding-bottom: 4px
+  text-decoration: none
+  position: relative
+.icon-link::after
+  background: url("../../assets/icon-arrow.svg") no-repeat
+  background-size: auto
+  background-position: right 2px
+  height: 22px
+  width: 22px
+  top: 0
+  right: -22px
+  position: absolute
+  content: ""
+  border-bottom: 1px solid $col-accent-links
 
 #wrapper
   position: relative
@@ -117,23 +134,6 @@ button
 .stay-productive .text p
   text-align: left
 
-a
-  color: $col-accent-links
-  border-bottom: 1px solid $col-accent-links
-  padding-bottom: 4px
-  text-decoration: none
-  position: relative
-.icon-link::after
-  background: url("../../assets/icon-arrow.svg") no-repeat
-  background-size: auto
-  background-position: right 2px
-  height: 22px
-  width: 22px
-  top: 0
-  right: -22px
-  position: absolute
-  content: ""
-  border-bottom: 1px solid $col-accent-links
 
 // TESTIMONIAL
 .testimonial
@@ -186,6 +186,10 @@ a
     grid-template-columns: 1fr 1fr
     align-items: center
     margin-top: 80px
+  .stay-productive .col2
+    grid-template-columns: 55% 1fr
+  .stay-productive .col2 .text p
+    padding-right: 80px
   .text
     grid-column: 1 / span 1
     grid-row: 1 / span 1
@@ -198,14 +202,36 @@ a
     display: grid
     grid-template-columns: 1fr 120px
     grid-gap: 15px
-
+  .stay-productive::before
+    background: url("../../assets/bg-curve-desktop.svg") no-repeat
+    background-size: cover
+    height: 100px
+    top: -100px
+    left: 0
+  .stay-productive
+    margin-top: 220px
+  .icon-link::after
+    background-position: right 4px
+    height: 26px
+    width: 22px
+    top: 0
+    right: -22px
+  .testimonial
+    width: 360px
+    padding-bottom: 20px
+  .stay-productive .col2 .text .testimonial p
+    padding-right: 20px
+  .attr-avatar
+    height: 35px
+  .attr-name
+    margin-top: 0
 
 
 @media screen and (min-width: 1050px)
   body
     font-size: $font-size-base-lrg
     line-height: 1.6
-  h1
+  h1, h2
     font-size: 2.3em
     margin-top: 0px
     margin-bottom: 5px
