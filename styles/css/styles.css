@@ -47,7 +47,7 @@ p {
   margin: 0 auto;
 }
 
-.image, .text, #signup-footer {
+.text, .image, #signup-footer {
   padding-left: 38px;
   padding-right: 38px;
 }
@@ -111,18 +111,63 @@ button {
 @media screen and (min-width: 800px) {
   .col2, .col4, header, footer {
     max-width: 1280px;
+    margin: 0 auto;
   }
 
   .col2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin-top: 80px;
   }
 
   .text {
     grid-column: 1/span 1;
     grid-row: 1/span 1;
     text-align: left;
+    padding-right: 60px;
+  }
+
+  .image {
+    padding-right: 38px;
+    padding-left: 0px;
+  }
+
+  #signup-hero {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    grid-gap: 15px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 2.3em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 1.7;
+  }
+
+  header {
+    padding-top: 60px;
+  }
+
+  header .logo {
+    height: 50px;
+  }
+
+  nav ul li {
+    margin-left: 60px;
+    font-size: 1em;
+  }
+
+  #signup-hero {
+    grid-template-columns: 1fr 200px 10px;
+    padding-bottom: 15px;
   }
 }
 
