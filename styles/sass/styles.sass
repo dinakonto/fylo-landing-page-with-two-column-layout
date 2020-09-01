@@ -42,7 +42,18 @@ h1,h2,h3,h4,h5,h6
 p
   font-size: 1em
   margin-bottom: 15px
-a
+nav a
+  text-decoration: none
+  color: $col-primary-dark
+nav a:hover
+  color: $col-accent-links
+  border-bottom: 1px solid $col-accent-links
+  padding-bottom: 4px
+  text-decoration: none
+a:focus
+  border: 2px dashed $col-neutral
+  outline: none
+.icon-link
   color: $col-accent-links
   border-bottom: 1px solid $col-accent-links
   padding-bottom: 4px
@@ -59,6 +70,12 @@ a
   position: absolute
   content: ""
   border-bottom: 1px solid $col-accent-links
+button:hover
+  filter: brightness(1.2)
+  cursor: pointer
+button:focus
+  border: 2px dashed $col-primary-dark
+  outline: none
 
 #wrapper
   position: relative
@@ -243,6 +260,11 @@ footer .logo
   margin-top: 3px
 .social ul a:last-of-type
   margin-right: 0
+.social ul a:hover
+  background: white
+  color: $col-primary-dark
+.social ul a:focus
+  border: 2px dashed $col-neutral
 
 
 
