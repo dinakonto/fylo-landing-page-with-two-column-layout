@@ -8,8 +8,8 @@ $col-neutral: hsl(0, 0%, 75%)
 
 $font-stack-headings: 'Raleway', Helvetica, sans-serif
 $font-stack-body: 'Open Sans', Helvetica, sans-serif
-$font-regular: 400
-$font-bold: 700
+$font-weight-regular: 400
+$font-weight-bold: 700
 $font-size-base-sml: 13px
 $font-size-base-lrg: 16px
 
@@ -24,7 +24,7 @@ body
   margin: 0
   font:
     family: $font-stack-body
-    weight: $font-regular
+    weight: $font-weight-regular
     size: $font-size-base-sml
   line-height: 1.5
   color: $col-primary-dark
@@ -35,6 +35,8 @@ h1
   font-size: 1.8em
   margin-top: 25px
   margin-bottom: 20px
+h2
+  font-size: 1.2em
 h1,h2,h3,h4,h5,h6
   font-family: $font-stack-headings
 p
@@ -89,10 +91,89 @@ button
   border: none
   background: $col-accent-buttons
   color: white
-  font-weight: $font-bold
+  font-weight: $font-weight-bold
   -webkit-box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
   -moz-box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
   box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
+
+// STAY PRODUCTIVE SECTION
+.stay-productive::before
+  background: url("../../assets/bg-curve-mobile.svg") no-repeat
+  background-size: contain
+  height: 120px
+  width: 100%
+  top: -14vw
+  left: 0
+  position: absolute
+  content: ""
+.stay-productive
+  position: relative
+  margin-top: 120px
+  background: #F9F8FE
+  padding-bottom: 80px
+.stay-productive .image
+  padding-top: 35px
+  padding-bottom: 65px
+.stay-productive .text p
+  text-align: left
+
+a
+  color: $col-accent-links
+  border-bottom: 1px solid $col-accent-links
+  padding-bottom: 4px
+  text-decoration: none
+  position: relative
+.icon-link::after
+  background: url("../../assets/icon-arrow.svg") no-repeat
+  background-size: auto
+  background-position: right 2px
+  height: 22px
+  width: 22px
+  top: 0
+  right: -22px
+  position: absolute
+  content: ""
+  border-bottom: 1px solid $col-accent-links
+
+// TESTIMONIAL
+.testimonial
+  background: white
+  padding: 15px 25px
+  border-radius: 4px
+  font-size: 0.85em
+  line-height: 1.8
+  margin-top: 40px
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1)
+.quote::before
+  background: url("../../assets/icon-quotes.svg") no-repeat
+  background-size: contain
+  height: 10px
+  width: 20px
+  top: 0
+  left: 0
+  position: absolute
+  content: ""
+.quote
+  position: relative
+  padding-top: 15px
+  margin-bottom: 10px
+.attribution
+  display: flex
+  align-items: center
+.attr-avatar
+  height: 25px
+  border-radius: 50px
+  margin-right: 10px
+.attr-name, .attr-role
+  display: block
+  line-height: 1.5
+.attr-name
+  font-weight: $font-weight-bold
+  margin-top: 4px
+.attr-role
+  font-size: 0.8em
+.attribution p
+  margin: 0
 
 
 
