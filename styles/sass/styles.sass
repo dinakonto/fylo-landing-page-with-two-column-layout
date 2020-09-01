@@ -64,7 +64,7 @@ a
   position: relative
 .col2, .col4
   margin: 35px
-.col2, .col4, footer
+.col2, .col4, .footer-top
   max-width: 500px
   margin: 0 auto
 .text, .image, #signup-footer
@@ -183,9 +183,75 @@ button
 #signup-footer
   padding: 10px 50px
 
+// FOOTER
+footer
+  background: $col-primary-dark
+  color: white
+  padding: 60px 35px 0px 35px
+  text-align: left
+  font-size: 1.2em
+  width: 100%
+footer a
+  color: white
+  text-decoration: none
+  border: none
+footer .logo path
+  fill: white
+footer .logo
+  margin-bottom: 30px
+.contact p
+  position: relative
+  margin-left: 45px
+  margin-bottom: 18px
+.contact p::before
+  margin-left: -45px
+  position: absolute
+.phone::before
+  content: url("../../assets/icon-phone.svg")
+.email::before
+  content: url("../../assets/icon-email.svg")
+.sitemap ul
+  list-style-type: none
+  padding: 0
+  margin: 45px 0 20px 0
+.sitemap ul li
+  margin-bottom: 15px
+.sitemap ul li:nth-of-type(4)
+  margin-bottom: 45px
+.social
+  margin: 0 auto
+  padding-top: 25px
+  text-align: center
+  padding-bottom: 40px
+  font-size: 1em
+.social ul
+  display: flex
+  justify-content: center
+  margin-bottom: 25px
+  list-style-type: none
+  padding: 0
+.social ul a
+  border: 1px solid white
+  width: 30px
+  height: 30px
+  text-align: center
+  border-radius: 50px
+  margin-right: 15px
+  color: white
+  transition: 0.2s ease-in-out
+.social ul a li
+  margin-top: 3px
+.social ul a:last-of-type
+  margin-right: 0
+
+
+
+/*
+ * RESPONSIVE CHANGES
+ */
 
 @media screen and (min-width: 800px)
-  .col2, .col4, header, footer
+  .col2, .col4, header, .footer-top
     max-width: 1280px
     margin: 0 auto
   input
@@ -199,6 +265,13 @@ button
     grid-template-columns: 55% 1fr
   .stay-productive .col2 .text p
     padding-right: 80px
+  .col4
+    display: grid
+    grid-gap: 50px
+    grid-template-columns: 1fr 2fr 1fr
+  .sitemap
+    display: grid
+    grid-template-columns: 1fr 1fr
   .text
     grid-column: 1 / span 1
     grid-row: 1 / span 1
@@ -241,6 +314,16 @@ button
     grid-gap: 5%
   #signup-footer
     padding: 0 35px 0 0
+  footer
+    margin: 0
+    font-size: 0.9em
+  .sitemap ul
+    margin-top: 10px
+  .social
+    padding-top: 0
+    margin: 0
+  .social ul
+    justify-content: flex-start
 
 
 @media screen and (min-width: 1050px)
@@ -271,3 +354,5 @@ button
   .early-access .col2
     grid-template-columns: 1fr 480px
     grid-gap: 15%
+  .col4
+    grid-gap: 180px
